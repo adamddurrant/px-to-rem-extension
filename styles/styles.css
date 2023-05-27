@@ -1,0 +1,47 @@
+body {
+  font-family: Inter, sans-serif;
+  padding: 0 5px;
+  background-color: #101010;
+  color: #ededed;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+input {
+  width: 70px;
+  height: 25px;
+  border: 1px solid #232323;
+  background-color: #151515;
+  color: #ededed;
+  border-radius: 5px;
+}
+
+.equals {
+  font-size: 30px;
+  color: #232323;
+  margin: 0 10px;
+  margin-top: -3px;
+}
+
+.result {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.copy-button {
+  margin-left: 15px;
+  display: flex;
+  background-color: #151515;
+  border: 1px solid #232323;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#copyIcon {
+  width: 15px;
+  height: 15px;
+  transition: .2s ease-in-out;
+}

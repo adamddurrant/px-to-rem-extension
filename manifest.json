@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Pixel-rem Converter",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"]
+}
