@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  // Varibles
   var valueInput = document.getElementById('valueInput');
   var result = document.getElementById('result');
   var copyButton = document.getElementById('copyButton');
   var copyIcon = document.getElementById('copyIcon');
 
+  // Auto focus input
+  window.onload = function() {
+    valueInput.focus();
+  }
+
+  // Input and output logic
   valueInput.addEventListener('input', function () {
     var inputValue = valueInput.value.trim();
 
@@ -28,14 +36,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Copy button logic
   copyButton.addEventListener('click', function () {
     if (result.innerText !== '') {
       navigator.clipboard.writeText(result.innerText).then(function () {
-        copyIcon.src = "/tick.png";
-        copyIcon.style.transition = "all 2s";
+        copyIcon.src = "/icons/tick-icon.svg";
+        copyIcon.style.transition = "all 2s ease-in-out";
         setTimeout(function () {
-          copyIcon.src = "/copy-icon.png";
-          copyIcon.style.transition = "all 2s";
+          copyIcon.src = "/icons/copy-icon.svg";
+          copyIcon.style.transition = "all 2s ease-in-out";
         }, 2000);
       });
     }
