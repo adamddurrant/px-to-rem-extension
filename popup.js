@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     var pixelRegex = /^(\d+(?:\.\d+)?)px$/;
-    var remRegex = /^(\d+(?:\.\d+)?)rem$/;
+    var remRegex = /^(\d*(?:\.\d+)?)rem$/;
 
     if (pixelRegex.test(inputValue)) {
       var pixelValue = parseFloat(inputValue.match(pixelRegex)[1]);
